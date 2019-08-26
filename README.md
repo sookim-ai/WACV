@@ -22,23 +22,14 @@ The details of input data, **hurricane_image.npy**, is following,
 
 shape: (3408, 10, 128, 257, 6)
 
-\begin{center}
- \begin{tabular}{||c c c||}
- \hline
- Axis & Description & Size  \\ [0.5ex]
- \hline\hline
- 0 & number of videos & 87837  \\
- \hline
- 1 & time & 10 (=30 hours) \\
- \hline
- 2 & width (longitude direction) & 128 (= 64 degree = 6400 km)  \\
- \hline
- 3 & height (latitude direction) & 257 (= 128.5 degree  = 12850 km)\\
- \hline
- 4 & climate variables & 6 (by order ['U850', 'V850', 'PRECT', 'QREFHT', 'TS', 'PSL']) \\ [1ex]
- \hline
-\end{tabular}
-\end{center}
+
+| Axis | Description | Size |
+| :---         |     :---:      |          ---: |
+| 0   | Number of hurricane videos     | 87837   |
+| 1     | Time        | 10 (=30 hours)      |
+| 2   | Width     | 128 (= 64 degree = 6400 km)   |
+| 3     | Height        | 257 (= 128.5 degree  = 12850 km)     |
+| 4     | Climate Variables        | 6 (by order: ['PSL', 'U850','V850','PRECT','TS','QREFHT'] )     |
 
 
 #### Output: hurricane_label.npy####
